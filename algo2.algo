@@ -1,0 +1,54 @@
+ALGORITHM calcul
+VAR
+array-tab1-of integer[5];
+array-tab2-of integer[5];
+i,j:integer
+sum:integer:=0;
+somme:integer:=sum*2;
+
+
+BEGIN
+while (i<4)
+for j from 0 to 4 do 
+if tab1[i]=tab2[j]{
+sum=sum+tab2[j]}
+else {
+sum=sum+0}
+i++
+somme=sum*2
+return ("la somme des element repeter est" somme)
+
+
+
+    
+END
+
+duxieme methode 
+ALGORITHM hachage
+tab1:HASH_TABLE<integer,integer>;
+tab2:tab1:HASH_TABLE<integer,integer>;
+i,j,sum,somme:integer;
+BEGIN:HASH_TABLE<INTEGER,integer>;
+tab1.insert(0,2);
+tab1.insert(1,3);
+tab1.insert(2,4);
+tab1.insert(3,5);
+write(tab1)
+
+tab2.insert(0,3);
+tab2.insert(1,4);
+tab2.insert(2,1);
+tab2.insert(3,9);
+write(tab2);
+
+while (i<3)
+
+for j from 0 to 3 do 
+if tab1.get[i]=tab2.get[j]{
+sum=sum+tab2.lookup[j]}
+else {
+sum=sum+0}
+i++
+somme=sum*2
+return ("la somme des element repeter est" somme)
+
